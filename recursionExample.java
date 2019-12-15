@@ -4,10 +4,10 @@ public class keepAdding
 {
     /*
      * Demonstrates recursion using additive operations.
-     * Pre: int num < 2
+     * Pre: int num
      * Post: int num >= 2
      */
-    public static int add(int num)
+    public static int twoOrMore(int num)
     {
         if(num < 2)
         {
@@ -20,11 +20,10 @@ public class keepAdding
     }
 
     /*
-     * Calls the recursive method add().
+     * Calls the recursive method twoOrMore().
      */
     public static void main(String[] args)
     {
-        System.out.println(add(-4)); // prints 2
         System.out.println(add(0)); // prints 2
         System.out.println(add(2)); // prints 2
         System.out.println(add(5)); // prints 5
